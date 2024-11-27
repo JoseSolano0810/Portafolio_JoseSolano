@@ -11,19 +11,20 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class CategoriaServiceImpl implements CategoriaService {
 
-     @Autowired
+         
+    @Autowired
     private CategoriaDao categoriaDao;
 
     @Override
-    @Transactional(readOnly = true)
+    @Transactional(readOnly=true)
     public List<Categoria> getCategorias(boolean activos) {
-        var lista = categoriaDao.findAll();
+        var lista=categoriaDao.findAll();
         if (activos) {
-            lista.removeIf(e -> !e.isActivo());
+           lista.removeIf((Categoria e) -> !e.isActivo());
         }
         return lista;
     }
-
+    
     @Override
     @Transactional(readOnly = true)
     public Categoria getCategoria(Categoria categoria) {
@@ -41,5 +42,4 @@ public class CategoriaServiceImpl implements CategoriaService {
     public void delete(Categoria categoria) {
         categoriaDao.delete(categoria);
     }
-    
 }
