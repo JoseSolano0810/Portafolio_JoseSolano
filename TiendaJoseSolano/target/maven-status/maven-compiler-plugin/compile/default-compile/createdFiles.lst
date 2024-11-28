@@ -1,3 +1,5 @@
+com\tienda\service\UsuarioService.class
+com\tienda\dao\RolDao.class
 com\tienda\domain\Categoria.class
 com\tienda\controller\CategoriaController.class
 com\tienda\dao\ProductoDao.class
