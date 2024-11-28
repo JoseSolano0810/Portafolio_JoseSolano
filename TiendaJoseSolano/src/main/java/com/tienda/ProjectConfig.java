@@ -99,17 +99,17 @@ public class ProjectConfig implements WebMvcConfigurer {
     public UserDetailsService users() {
         UserDetails admin = User.builder()
                 .username("jose")
-                .password("jose1342")
+                .password("{noop}jose1342")
                 .roles("USER", "VENDEDOR", "ADMIN")
                 .build();
         UserDetails sales = User.builder()
                 .username("manuel")
-                .password("manuel1342")
+                .password("{noop}manuel1342")
                 .roles("USER", "VENDEDOR")
                 .build();
         UserDetails user = User.builder()
                 .username("david")
-                .password("david1342")
+                .password("{noop}david1342")
                 .roles("USER")
                 .build();
         return new InMemoryUserDetailsManager(user, sales, admin);
