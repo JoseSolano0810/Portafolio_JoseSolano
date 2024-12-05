@@ -22,8 +22,7 @@ public class CorreoServiceImpl implements CorreoService {
             throws MessagingException {
 
         MimeMessage message = mailSender.createMimeMessage();
-        MimeMessageHelper helper
-                = new MimeMessageHelper(message,
+        MimeMessageHelper helper = new MimeMessageHelper(message,
                         true);
         helper.setTo(para);
         helper.setSubject(asunto);

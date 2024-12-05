@@ -28,4 +28,56 @@ public class Usuario implements Serializable {
     @OneToMany
     @JoinColumn(name="id_usuario")
     List<Rol> roles;
+
+    public Long getIdUsuario(){
+        return idUsuario;
+    }
+    
+    public String getUsername(){
+        return username;
+    }
+    
+    public String getPassword(){
+        return password;
+    }
+    
+    public String getNombre(){
+        return nombre;
+    }
+    
+    public String getApellidos(){
+        return apellidos;
+    }
+    
+    public String getCorreo(){
+        return correo;
+    }
+    
+    public String getTelefono(){
+        return telefono;
+    }
+    
+    public String getRutaImagen(){
+        return rutaImagen;
+    }
+    
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public List<Rol> getRoles() {
+        return roles;
+    }
+
+    public void setPassword(String clave) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void setActivo(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+
+    public void setRutaImagen(String cargaImagen) {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
 }
