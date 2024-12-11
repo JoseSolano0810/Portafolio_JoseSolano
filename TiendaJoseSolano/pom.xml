@@ -5,18 +5,31 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.4</version>
+        <version>3.4.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.tienda</groupId>
     <artifactId>tienda</artifactId>
-    <version>1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>tienda</name>
     <description>Proyecto tienda de martes noche 2023 IIIC</description>
-    <properties>
-        <java.version>23</java.version>
-    </properties>
-    <dependencies>
+    <url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+	<properties>
+		<java.version>23</java.version>
+	</properties>
+	<dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -35,6 +48,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>1.18.34</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
